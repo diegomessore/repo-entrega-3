@@ -1,0 +1,228 @@
+.navbar {
+  background-color: white;
+}
+
+.navbar .navbar-text,
+.navbar-brand,
+.nav-Link {
+  color: rgb(230, 155, 6) !important;
+}
+
+body {
+  padding-top: 100px;
+}
+
+footer {
+  background-color: #111110;
+  background: orange;
+  color: rgb(247, 246, 245);
+  text-shadow: #221c1c;
+  position: relative;
+  scroll-margin-top: 1000px;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+}
+
+.container-img {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px;
+  grid-gap: 20px;
+}
+
+.container-img .box-img figure {
+  width: 100%;
+  height: 100%;
+}
+
+.container-img .box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.container-img .box-img:nth-child(1) {
+  grid-row-start: span 2;
+}
+
+.container-img .box-img:nth-child(4) {
+  grid-row-start: span 2;
+}
+
+.about {
+  margin: 80px auto;
+  width: 900px;
+  height: 100%;
+  object-fit: cover;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.about__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: #525050 2px 5px 9px;
+  grid-column: 1/5;
+  grid-row: 1/5;
+}
+
+.about__gradient {
+  background-image: linear-gradient(to top, orange 0%, gray 100%);
+  box-shadow: #525050 2px 5px 9px;
+  grid-column: 2/6;
+  grid-row: 2/7;
+}
+
+.about__article {
+  background-color: #fff;
+  padding: 2.5em;
+  box-shadow: #525050 2px 5px 9px;
+  grid-column: 4/9;
+  grid-row: 3/6;
+}
+
+.about__title {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: #ec710c;
+}
+
+.about__paragraph {
+  line-height: 1.5;
+}
+
+.btn {
+  border-radius: 10px;
+  display: inline-block;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-shadow: 0 1px rgb(0, 0, 0);
+}
+
+.btn-green {
+  color: white;
+  background-color: rgb(250, 167, 2);
+  margin: 30px auto;
+}
+
+.btn-green:hover {
+  background-color: #c4a14a;
+}
+
+.btn-green:active {
+  background-color: #f5c951;
+}
+
+form {
+  background-color: #fdfdfd;
+  border-radius: 40px;
+  color: #1f1b1b;
+  box-decoration-break: inherit;
+  font-size: 1em;
+  font-style: unset;
+  padding: 50px;
+  margin: 0 auto;
+  width: 400px;
+}
+
+input, textarea {
+  border: 0;
+  outline: none;
+  width: 300px;
+}
+
+.field {
+  border: solid 1px #615e5e;
+  padding: 10px;
+}
+
+.field:focus {
+  border-color: #ec710c;
+}
+
+.center-content {
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .about {
+    margin: 150px auto;
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    align-items: center;
+  }
+}
+@media (max-width: 850px) {
+  .about {
+    margin: 150px auto;
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    align-items: center;
+  }
+}
+@media (max-width: 600px) {
+  .about {
+    margin: 150px auto;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    align-items: center;
+  }
+}
+body {
+  padding-top: 100px;
+}
+
+h1 {
+  color: #e78433;
+}
+
+.wrap1 {
+  margin-block: 30px;
+  justify-content: center;
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../imagenes/banda.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.wrap2 {
+  margin-block: 30px;
+  justify-content: center;
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../imagenes/guitarras.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.wrap-texto {
+  color: white;
+  text-align: start;
+  width: 60%;
+}
+
+/*# sourceMappingURL=styles.css.map */

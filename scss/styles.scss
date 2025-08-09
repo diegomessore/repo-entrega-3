@@ -1,0 +1,49 @@
+@use "layout/navbar";
+@use "layout/footer";
+@use "layout/grid";
+@use "layout/form";
+@use "layout/mediaqueries";
+
+$danger:#e91e63;
+
+
+body {
+  padding-top: 100px;
+
+}
+
+h1 {
+    color: $danger;
+}
+
+.wrap1 {
+    margin-block: 30px;
+    justify-content: center;
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:url(../imagenes/banda.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.wrap2 {
+    margin-block: 30px;
+    justify-content: center;
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:url(../imagenes/guitarras.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.wrap-texto {
+    color: white;
+    text-align: start;
+    width: 60%;
+}
