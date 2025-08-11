@@ -7,6 +7,10 @@
     align-items: center;
 }
 
+    .container-img  {
+    padding: 10px;
+}
+
 }
 
 @media (max-width: 850px) {
@@ -16,6 +20,7 @@
     height: 600px;
     object-fit: cover;
     align-items: center;
+
 }
 
 }

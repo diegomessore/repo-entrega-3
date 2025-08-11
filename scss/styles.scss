@@ -3,17 +3,47 @@
 @use "layout/grid";
 @use "layout/form";
 @use "layout/mediaqueries";
+@use "layout/cards";
+@use "layout/flipcards";
 
-$danger:#e91e63;
+$danger:#e96f1e;
 
 
 body {
   padding-top: 100px;
 
+
+}
+
+.container  {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 20px 0;
 }
 
 h1 {
-    color: $danger;
+    color: #FFA500;
+    font-family: "Anton", sans-serif;
+    font-weight: 900;
+}
+
+h2 {
+    color: #FFA500;
+    font-family: "Anton", sans-serif;
+    font-weight: 900;
+}
+
+h5 {
+    color: #5c3e07;
+    font-family: "Anton", sans-serif;
+    font-weight: 900;
+}
+p {
+    color: rgb(78, 77, 74);
+    font-family: "Anton", sans-serif;
+    font-weight: 500;
 }
 
 .wrap1 {
