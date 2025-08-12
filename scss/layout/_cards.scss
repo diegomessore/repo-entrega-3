@@ -6,7 +6,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
 
 .card {
@@ -17,7 +16,7 @@
     transition: all 400ms ease;
     overflow: hidden;
     padding-bottom: 20px;
-    margin: 20px;
+    margin: 10px;
 }
 
 .card:hover {
@@ -53,7 +52,6 @@
     height: auto;
     margin: auto;
 }
-
 .card button {
     display: block;
     border: 0;
@@ -73,4 +71,8 @@
 .content    {
     padding: 15px 10px;
     text-align: center;
+}
+
+.cardp  {
+    color: white;
 }

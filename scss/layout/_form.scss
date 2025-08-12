@@ -7,8 +7,8 @@
 }
 
 .btn-green {
-    color: white;
-    background-color: rgb(250, 167, 2);
+    color: rgb(253, 253, 253);
+    background-color: rgb(128, 126, 122);
     margin: 30px auto;
 }
 
@@ -27,8 +27,8 @@ form {
     box-decoration-break: inherit;
     font-size: 1em;
     font-style: unset;
-    padding: 50px;
-    margin: 0 auto;
+    padding: 10px;
+    margin: 10px auto;
     width: 400px;
 
 }
@@ -36,7 +36,7 @@ form {
 input, textarea {
     border: 0;
     outline: none;
-    width: 300px;
+    width: 400px;
 }
 
 .field {

@@ -1,5 +1,5 @@
 .navbar {
-  background-color: white;
+  background-color: rgb(253, 253, 253);
 }
 
 .navbar .navbar-text,
@@ -9,7 +9,7 @@
 }
 
 body {
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 footer {
@@ -123,8 +123,8 @@ footer {
 }
 
 .btn-green {
-  color: white;
-  background-color: rgb(250, 167, 2);
+  color: rgb(253, 253, 253);
+  background-color: rgb(128, 126, 122);
   margin: 30px auto;
 }
 
@@ -143,15 +143,15 @@ form {
   box-decoration-break: inherit;
   font-size: 1em;
   font-style: unset;
-  padding: 50px;
-  margin: 0 auto;
+  padding: 10px;
+  margin: 10px auto;
   width: 400px;
 }
 
 input, textarea {
   border: 0;
   outline: none;
-  width: 300px;
+  width: 400px;
 }
 
 .field {
@@ -174,9 +174,6 @@ input, textarea {
     height: 600px;
     object-fit: cover;
     align-items: center;
-  }
-  .container-img {
-    padding: 10px;
   }
 }
 @media (max-width: 850px) {
@@ -222,7 +219,7 @@ input, textarea {
   transition: all 400ms ease;
   overflow: hidden;
   padding-bottom: 20px;
-  margin: 20px;
+  margin: 10px;
 }
 
 .card:hover {
@@ -279,6 +276,10 @@ input, textarea {
 .content {
   padding: 15px 10px;
   text-align: center;
+}
+
+.cardp {
+  color: white;
 }
 
 * {
@@ -342,7 +343,7 @@ input, textarea {
   transform: perspective(600px) rotateY(180deg);
   background: rgb(3, 35, 54);
   padding: 15px;
-  color: #f3f3f3;
+  color: #f19a16;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -378,72 +379,38 @@ input, textarea {
   transform: perspective(600px) rotateY(360deg);
 }
 
-body {
-  padding-top: 100px;
+.titulo {
+  color: rgb(104, 96, 82);
+  font-size: clamp(2rem, 5vw, 4rem);
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   gap: 60px;
   padding: 20px 0;
 }
 
-h1 {
-  color: #FFA500;
+.titulo1, h5, h2, h1 {
+  color: rgb(253, 162, 3);
   font-family: "Anton", sans-serif;
   font-weight: 900;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+}
+
+h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
-  color: #FFA500;
-  font-family: "Anton", sans-serif;
-  font-weight: 900;
-}
-
-h5 {
-  color: #5c3e07;
-  font-family: "Anton", sans-serif;
-  font-weight: 900;
+  color: rgb(87, 82, 82);
 }
 
 p {
-  color: rgb(78, 77, 74);
+  color: black;
   font-family: "Anton", sans-serif;
   font-weight: 500;
-}
-
-.wrap1 {
-  margin-block: 30px;
-  justify-content: center;
-  width: 100vw;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(../imagenes/banda.jpeg);
-  background-size: cover;
-  background-position: center;
-}
-
-.wrap2 {
-  margin-block: 30px;
-  justify-content: center;
-  width: 100vw;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(../imagenes/guitarras.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.wrap-texto {
-  color: white;
-  text-align: start;
-  width: 60%;
 }
 
 /*# sourceMappingURL=styles.css.map */
