@@ -10,7 +10,7 @@
 
 .card {
     border-radius: 20px;
-    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.3);
     width: 400px;
     height: 700px;
     transition: all 400ms ease;
@@ -25,7 +25,7 @@
 }
 
 .card figure    {
-    height: 500px;
+    height: 400px;
 }
 
 .card img    {
@@ -48,7 +48,7 @@
     padding: 5px;
     font-size: 14px;
     display: block;
-    width: 80%;
+    width: 90%;
     height: auto;
     margin: auto;
 }
@@ -56,9 +56,9 @@
     display: block;
     border: 0;
     outline: 0;
-    background-color: orange;
+    background-color: rgb(202, 140, 23);
     width:200px;
-    height: 30px;
+    height: 40px;
     padding: 5;
     color: white;
     text-transform: uppercase;

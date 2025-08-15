@@ -1,0 +1,9 @@
+
+
+@mixin border-radius($radius)   {
+    border-radius: $radius;
+}
+
+@mixin text-shadow($text-shadow) {
+    text-shadow: $text-shadow;
+}

@@ -5,51 +5,9 @@
 @use "layout/mediaqueries";
 @use "layout/cards";
 @use "layout/flipcards";
+@use "layout/variables";
+@use "layout/mixin";
 
 
-$color: rgb(253, 162, 3);
-$color2: rgb(104, 96, 82);
-$colorw: white;
-
-
-.titulo {
-    color: $color2;
-    font-size: clamp(2rem, 5vw, 4rem);
-}
-.container  {
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
-    padding: 20px 0;
-
-}
-
-.titulo1 {
-    color: $color;
-    font-family: "Anton", sans-serif;
-    font-weight: 900;
-    font-size: clamp(2.2rem, 5vw, 4rem);
-}
-
-h1 {
-    @extend .titulo1;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-}
-
-h2 {
-    @extend .titulo1;
-    color: rgb(87, 82, 82)
-}
-
-h5 {
-    @extend .titulo1;
-}
-
-p {
-    color: black;
-    font-family: "Anton", sans-serif;
-    font-weight: 500;
-}
 
 
