@@ -31,7 +31,6 @@ a {
     padding: 0 20px;
 }
 
-
 .container4  {
     margin: 0;
     padding: 0;
@@ -44,8 +43,6 @@ a {
     justify-content: center;
 }
 
-
-
 .titulo1 {
     color: var(--variable-color, rgb(238, 161, 18));
     font-family: "Anton", sans-serif;
@@ -56,8 +53,6 @@ a {
 h1 {
     @extend .titulo1;
     text-shadow: 2px 2px 4px rgba(167, 63, 63, 0.2);
-
-
 }
 
 h2 {
