@@ -5,51 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">    
 <link rel="stylesheet" href="../styles.css">
-<link rel="icon" href="imagenes/favicon.ico">
+<link rel="icon" href="../imagenes/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Musicos</title>
+    <title>Músicos</title>
+<meta name="keywords" content="música, músicos emergentes, bandas, solistas, géneros musicales, conciertos, cultura musical, comunidad musical, rock, pop, folklore, tango">
+<meta name="description" content="Explora nuestra galería de músicos emergentes y descubre bandas y solistas de diversos géneros musicales. Encuentra perfiles detallados, historias y estilos únicos. Conéctate con la comunidad musical y mantente al tanto de conciertos y eventos. Perfecto para amantes de la música que buscan nuevos talentos.">
 </head>
 <body>
 
-   <header class="container">
-        <nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="../index.html"><img src="../imagenes/stagelogogr.png" width="250" height="40" alt=""></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="establecimientos.html">Establecimientos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="musicos.html">Musicos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="comunidad.html">Comunidad</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="contacto.html">Contactos</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+   <header class="header">
+    <a href="../index.html"><img src="../imagenes/stagelogogr.png" width="250" height="40" alt=""></a>
+    <input type="checkbox" id="check">
+    <label for="check" class="icons">
+    <i class='bx  bx-menu' id="menu-icon"></i>
+    <i class='bx  bx-x' id="close-icon"></i>
+    </label>
+        <nav class="navbar">
+          <a href="./establecimientos.html" style="--i:0">Establecimientos</a>
+          <a href="./musicos.html" style="--i:1">Músicos</a>
+          <a href="./comunidad.html" style="--i:2">Comunidad</a>
+          <a href="./contacto.html" style="--i:3">Contactos</a>
 </nav>
     </header>
    <main>
     <div class="container">
-    <h1>MÚSICOS</h1>
+    <h1>GALERIA DE MÚSICOS EMERGENTES</h1>
     </div>
-    <div class="container py-4">
+    <div class ="slider">
+      <figure>
+        <div class="slide">
+          <h1>BARES</h1>
+          <p>Encontrá los mejores bares que buscas con los mejores escenarios que para mostrar tu música. Entra a la galeria y realiza una busqueda avanzada según el tipo de establecimiento que más te interese</p>
+          <img src="../imagenes/c1.jpg" alt="Bares">
+        </div>
+        <div class="slide">
+          <h1>MUSICOS</h1>
+          <p>Si sos músico podes ser parte de STAGE. Registrate y armá tu perfil para entrar en nuestra galeria. Serás parte de una gran comunidad de músicos donde podras compartir todo la info que quieras, fechas de conciertos, busqueda de artistas, reviews de establecimiento, etc.</p>
+          <img src="../imagenes/c8.jpg" alt="Músicos">
+        </div>        <div class="slide">
+          <h1>ANUNCIANTES</h1>
+          <p>Podes anunciar tu servicio dentro de nuestra zona de anunciantes. Ventas de instrumentos, profesores de musica particulares, luthiers, salas de ensayo, estudios de grabación, escuelas de musica, etc.</p>
+          <img src="../imagenes/c4.jpg" alt="Anunciantes">
+        </div>        <div class="slide">
+          <h1>ESCENARIOS</h1>
+          <p>Encontrá los mejores escenarios de la ciudad entrando a cada perfil de establecimientos donde podras visualizar imagenes de cada lugar y una breve sinopsis que te ayudará a decidir y contactar con el que más guste</p>
+          <img src="../imagenes/c11.jpeg" alt="Escenarios">
+        </div>
+      </figure>
+    </div>
+
+      <div class="container">
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toogle" data-bs-toggle="dropdown">
+          <button class="btn btn-green-2" data-bs-toggle="dropdown">
             Buscar por género musical
           </button>
 
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu dropdown-xxl">
             <li>
               <a class="dropdown-item" href="rock.html">Rock</a>
             </li>
@@ -64,20 +78,126 @@
             </li>
           </ul>
         </div>
-        <br>
   <div>
-    <h2>Galeria de Músicos</h2>
-    <p>Ingresa a la galeria de músicos y realizá una busqueda filtrando por el género que te interesa.
+    <h2>Perfiles y contactos de músicos</h2>
+    <p>Nuestro objetivo es crear una conexión entre los músicos y cada escenario del país.
+Una plataforma que ofrece espacios de diferentes índoles, de distintos lugares y muestre perfiles y variantes de contacto de cada establecimiento. 
+Implementar un ida y vuelta que permita tanto a los músicos como a los escenarios encontrarse para lograr ese objetivo que tienen las dos partes en común, nuevas posibilidades.
+Se parte de esta comunidad que busca en la diversidad aumentar las posibilidades para todos los que amamos la música.
 
-Podras contactar a los músicos desde el perfil que eligas.
 </p>
-  <div class="container">
-    <img src="../imagenes/guitarras.jpg" alt="Banda"width="100%">
-  </div>
-<br>
+
+    <section>
+        <div class="container2">
+          <div class="card">
+                <img src="../imagenes/logowaduwadu.jpg" alt="Wadu Wadu">
+                <h3>WADU WADU</h3>
+                <p>Wadu Wadu es una banda tributo argentina que rinde homenaje a Virus. Con una puesta en escena vibrante, el grupo revive clásicos como “Imágenes paganas”, “Luna de miel en la mano” y “Mirada Speed”. Wadu Wadu se ha consolidado como un tributo revelación, ofreciendo al público una experiencia nostálgica y auténtica que celebra el legado inolvidable de Virus.</p>
+                <button>Entrar al perfil</button>
+            </div>
+          <div class="card">
+                <img src="../imagenes/logosullivansnegro.jpg" alt="The Sullivans">
+                <h3>THE SULLIVANS</h3>
+                <p>The Sullivans es una banda argentina que recrea la música de The Beatles. En el 2015 se consagraron como la mejor banda Beatle de Latinoamérica en el mítico The Cavern de Buenos Aires. En agosto de 2016 y 2019 participaron del “International Beatleweek” de Liverpool, en el emblemático “The Cavern Club” de Liverpool.
+Integrantes:
+Ale Messore, Claudio Álvarez, Diego Messore y
+Sergio Vanella. 
+</p>
+                <button>Entrar al perfil</button>
+          </div>
+          <div class="card">
+                <img src="../imagenes/logoelrito.jpg" alt="El Rito">
+                <h3>EL RITO</h3>
+                <p>El Rito es una banda argentina originaria de Posadas, Misiones, formada en 2005 con el objetivo de rendir homenaje a Soda Stereo y a Gustavo Cerati. Integrada por músicos apasionados. Su repertorio abarca desde los clásicos de Soda Stereo hasta las joyas de la carrera solista de Cerati, ofreciendo una experiencia que transporta a los asistentes a los mejores momentos de la banda original.</p>
+                <button>Entrar al perfil</button>
+          </div>
+                    <div class="card">
+                <img src="../imagenes/seres.jpg" alt="SERES">
+                <h3>SERES</h3>
+                <p>Seres es una banda Argentina, formada en 2011. Su propuesta musical fusiona elementos de rock, post-rock y sonidos experimentales, creando atmósferas densas y emotivas. A lo largo de su carrera, han lanzado varios álbumes, destacándose por su lírica introspectiva y su enfoque en temas como la existencia, la lucha interna y la conexión humana. Seres se ha destacado por su evolución sonora y su energía en vivo, ganándose un lugar en el circuito de música alternativa.</p>
+                <button>Entrar al perfil</button>
+            </div>
+          <div class="card">
+                <img src="../imagenes/logolagroovisima.jpg" alt="La Groovisima">
+                <h3>LA GROOVISIMA</h3>
+                <p>La Groovisima es una banda argentina formada en 1995, reconocida por su fusión de funk, soul y rock. Integrada por Daniel Colombres , Gabriel Lazzarini, Silvio Furmansky, Damián Oliver y Pablo Donelli , se destacó por su presencia en el programa televisivo "Duro de Acostar" de Roberto Petinatto, donde aportaban una dosis de música negra a la medianoche. Su repertorio incluye versiones de clásicos de James Brown, Otis Redding y Stevie Wonder, entre otros. En 1997, lanzaron su álbum "Plan Perfecto".</p>
+                <button>Entrar al perfil</button>
+          </div>
+          <div class="card">
+                <img src="../imagenes/fotosuroculto.jpeg" alt="Sur Oculto">
+                <h3>SUR OCULTO</h3>
+                <p>Sur Oculto es una banda argentina de pop psicodélico que combina sonidos atmosféricos con letras introspectivas y profundas. Originaria de Argentina, su música se caracteriza por crear ambientes envolventes y una estética sonora única, explorando temas de introspección, misterio y cultura local. Con una propuesta innovadora y experimental, Sur Oculto busca conectar emocionalmente con su audiencia, ofreciendo una experiencia musical que invita a la reflexión y al viaje sensorial.</p>
+                <button>Entrar al perfil</button>
+          </div>
+                    <div class="card">
+                <img src="../imagenes/logoastillero.jpg" alt="Astillero">
+                <h3>ASTILLERO</h3>
+                <p>Astillero es una banda argentina de tango que se formó en 2005 con el objetivo de revitalizar el género y darle un lugar en la cultura ciudadana contemporánea, según el sitio web Palacio Libertad. Se caracteriza por su enfoque en el nuevo tango, incorporando elementos de la música contemporánea y manteniendo la esencia del tango tradicional. Buscan devolverle al tango su lugar en la cultura ciudadana y aportar valor desde su propia perspectiva temporal.</p>
+                <button>Entrar al perfil</button>
+            </div>
+          <div class="card">
+                <img src="../imagenes/logolachicana.jpeg" alt="La Chicana">
+                <h3>LA CHICANA</h3>
+                <p>La Chicana es una banda argentina de tango liderada por Dolores Solá y Acho Estol, conocida por fusionar el tango tradicional con influencias contemporáneas. Además, "La Chicana" es el título de una película documental de 1979 dirigida por Sylvia Morales, que explora la historia de las mujeres chicanas en Estados Unidos. También existe una película llamada "El Chicano", un film de superhéroes de 2018. </p>
+                <button>Entrar al perfil</button>
+          </div>
+          <div class="card">
+                <img src="../imagenes/logoamorestangos.jpeg" alt="Amores Tangos">
+                <h3>AMORES TANGOS</h3>
+                <p>Amores Tangos es una orquesta argentina que revitaliza el tango con un enfoque festivo y alegre, fusionando elementos de kermés, carnaval y otras músicas latinoamericanas. La banda se destaca por sus puestas en escena originales, que incluyen bailarines, corsos y murgas, y por la participación activa del público en sus shows. Su propuesta musical incorpora improvisación y juegos, creando una especial atmósfera entre músicos y espectadores. </p>
+                <button>Entrar al perfil</button>
+          </div>
+                    <div class="card">
+                <img src="../imagenes/logoalmachango.jpg" alt="Alma Chango">
+                <h3>ALMA CHANGO</h3>
+                <p>Alma Chango es una banda folklórica argentina que fusiona ritmos tradicionales con sonidos contemporáneos, destacándose por su energía y autenticidad. Originaria de Argentina, su música refleja la riqueza cultural del país, combinando instrumentos típicos con letras que evocan historias y tradiciones folclóricas. Con una propuesta innovadora, Alma Chango busca mantener viva la esencia del folklore argentino mientras conecta con nuevas generaciones y públicos diversos.</p>
+                <button>Entrar al perfil</button>
+            </div>
+          <div class="card">
+                <img src="../imagenes/logotriangula.jpg" alt="Triangula">
+                <h3>TRIANGULA</h3>
+                <p>Triángula es un proyecto musical liderado por tres destacadas y talentosas cantantes, compositoras y amigas, ellas son Micaela Vita, Noelia Recalde y Nadia Larcher. Este grupo se destaca principalmente por su enfoque en la canción popular argentina, combinando elementos del rock y el folklore, y por su discurso social y transfeminista. Triángula se construye alrededor de la figura femenina, entendida política y poéticamente, en el contexto de las transformaciones sociales actuales. </p>
+                <button>Entrar al perfil</button>
+          </div>
+          <div class="card">
+                <img src="../imagenes/logogauchos.jpg" alt="Gauchos">
+                <h3>GAUCHOS</h3>
+                <p>Guauchos es una banda argentina emergente que fusiona el folklore con el rock y otros géneros musicales, originaria de Formosa. Se caracterizan por su sonido psicodélico y sus letras que exploran la identidad del noreste argentino. Mezclan ritmos folklóricos como la chacarera, zamba y guaraina con elementos del rock y psicodelia. Además del Premio Gardel, han participado en importantes festivales como Cosquín Rock y han realizado giras por España y Francia. </p>
+                <button>Entrar al perfil</button>
+          </div>
+        </div>
+      </section>
+      <br>
+
+  <div class="video-container">
+<iframe src="https://www.youtube.com/embed/lWIEFnbjuvE" frameborder="0" allowfullscreen width="560" height="315"></iframe><br>
    </main>
-    <footer>
-        STAGE - stage@satge.com - www.stage.com
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+            <figure>
+                <a href="../index.html">
+                    <img src="../imagenes/stagelogogrgr.png" alt="Logo Stage">
+                </a>
+            </figure>
+            </div>
+            <div class="box">
+                <h6>NUESTRA EMPRESA</h6>
+                <p class="text">Stage es un puente que une artistas con escenarios de todo nuestro país.</p>
+                <p class="text">Músicos emergentes y establecimientos destacados para seguir enalalteciendo nuestro arte y cultura.</p>
+            </div>
+            <div class="box">
+                <h6>TAMBIÉN PODES SEGUIRNOS</h6>
+                <div class="red-social">
+                <a href="#"><img src="../imagenes/icofacebook.png" alt="Facebook" class="ico"></a>
+                <a href="#"><img src="../imagenes/icoinstagram.png" alt="Instagram" class="ico"></a>
+                <a href="#"><img src="../imagenes/icowhatsapp.png" alt="Whatsapp" class="ico"></a>
+                <a href="#"><img src="../imagenes/icoyoutube.png" alt="Youtube" class="ico"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2025 <b>STAGE</b> - Todos los Derechos Reservados.</small>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script></body>
 </html>

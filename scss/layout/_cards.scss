@@ -1,11 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 
+/* CARDS ANIMADAS PERFILES MUSICOS Y ESTABLECIMIENTOS */
 
 .container2 {
     width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
 }
 
 .card {
@@ -63,6 +71,87 @@
     color: white;
     text-transform: uppercase;
     border-radius: 20px 10px;
+    margin: 2rem auto;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.content    {
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.cardp  {
+    color: white;
+}
+
+/* CARDS ZONA DE ANUNCIOS PAGINA COMUNIDAD */
+
+.container4 {
+    background-color: rgb(252, 185, 61);
+    width: 100vh;
+    height: auto;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card4 {
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    height: 410px;
+    transition: all 400ms ease;
+    overflow: hidden;
+    padding-bottom: 5px;
+    margin: 10px;
+}
+.card4:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translate(-3%);
+}
+
+.card4 figure    {
+    height: 200px;
+}
+
+.card4 img    {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.card4 h4    {
+    font-weight: bold;
+    text-align: center;
+    text-shadow: rgb(167, 163, 163) 0 0 rgba(0, 0, 0, 0.3);
+    color: rgb(50, 107, 160);
+    padding: 10px;
+}
+.card4 p {
+    text-align: justify;
+    padding: 5px;
+    font-size: 14px;
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+.card4 .btn {
+    display: block;
+    border: 0;
+    outline: 0;
+    background-color: rgb(44, 32, 9);
+    width:200px;
+    height: 40px;
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
     margin: 2rem auto;
     cursor: pointer;
     transition: all .3s ease-in-out;

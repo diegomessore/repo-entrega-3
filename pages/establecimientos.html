@@ -5,48 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">    
 <link rel="stylesheet" href="../styles.css">
-<link rel="icon" href="imagenes/favicon.ico">
+<link rel="icon" href="../imagenes/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Establecimientos</title>
+    <title>Establecimientos con escenarios</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<meta name="keywords" content="establecimientos, escenarios, bares, teatros, restaurantes, espacios culturales, música en vivo, conciertos, shows en vivo, cultura, entretenimiento">
+<meta name="description" content="Descubre los mejores establecimientos con escenarios para música en vivo en nuestra plataforma. Encuentra bares, teatros, restaurantes y espacios culturales ideales para conciertos y shows en vivo. Explora una variedad de lugares que ofrecen experiencias únicas para amantes de la música y el entretenimiento. Perfecto para músicos y público en general.">
 </head>
 <body>
 
-   <header class="container">
-        <nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="../index.html"><img src="../imagenes/stagelogogr.png" width="250" height="40" alt=""></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="establecimientos.html">Establecimientos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="musicos.html">Musicos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="comunidad.html">Comunidad</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="contacto.html">Contactos</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+   <header class="header">
+    <a href="../index.html"><img src="../imagenes/stagelogogr.png" width="250" height="40" alt=""></a>
+    <input type="checkbox" id="check">
+    <label for="check" class="icons">
+    <i class='bx  bx-menu' id="menu-icon"></i>
+    <i class='bx  bx-x' id="close-icon"></i>
+    </label>
+        <nav class="navbar">
+          <a href="./establecimientos.html" style="--i:0">Establecimientos</a>
+          <a href="./musicos.html" style="--i:1">Músicos</a>
+          <a href="./comunidad.html" style="--i:2">Comunidad</a>
+          <a href="./contacto.html" style="--i:3">Contactos</a>
 </nav>
     </header>
-    
    <main>
     <div class="container">
-    <h1>ESTABLECIMIIENTOS</h1>
+    <h1>ESTABLECIMIENTOS</h1>
     </div>
-    <div class="container py-4">
+
+    <div class ="slider">
+      <figure>
+        <div class="slide">
+          <h1>BARES</h1>
+          <p>Encontrá los mejores bares que buscas con los mejores escenarios que para mostrar tu música. Entra a la galeria y realiza una busqueda avanzada según el tipo de establecimiento que más te interese</p>
+          <img src="../imagenes/c1.jpg" alt="Bares">
+        </div>
+        <div class="slide">
+          <h1>MUSICOS</h1>
+          <p>Si sos músico podes ser parte de STAGE. Registrate y armá tu perfil para entrar en nuestra galeria. Serás parte de una gran comunidad de músicos donde podras compartir todo la info que quieras, fechas de conciertos, busqueda de artistas, reviews de establecimiento, etc.</p>
+          <img src="../imagenes/c8.jpg" alt="Músicos">
+        </div>        <div class="slide">
+          <h1>ANUNCIANTES</h1>
+          <p>Podes anunciar tu servicio dentro de nuestra zona de anunciantes. Ventas de instrumentos, profesores de musica particulares, luthiers, salas de ensayo, estudios de grabación, escuelas de musica, etc.</p>
+          <img src="../imagenes/c4.jpg" alt="Anunciantes">
+        </div>        <div class="slide">
+          <h1>ESCENARIOS</h1>
+          <p>Encontrá los mejores escenarios de la ciudad entrando a cada perfil de establecimientos donde podras visualizar imagenes de cada lugar y una breve sinopsis que te ayudará a decidir y contactar con el que más guste</p>
+          <img src="../imagenes/c9.jpg" alt="Escenarios">
+        </div>
+      </figure>
+    </div>
+
+   
+
+      <div class="container">
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toogle" data-bs-toggle="dropdown">
+          <button class="btn btn-green-2" data-bs-toggle="dropdown">
             Buscar por tipo de establecimiento
           </button>
 
@@ -55,30 +72,135 @@
               <a class="dropdown-item" href="bares.html">Bares</a>
             </li>
             <li>
-              <a class="dropdown-item" href="restaurantes.html">Restaurantes</a>
-            </li>
-                        <li>
               <a class="dropdown-item" href="teatros.html">Teatros</a>
             </li>
                         <li>
               <a class="dropdown-item" href="espaciosculturales.html">Espacios culturales</a>
             </li>
+                        <li>
+              <a class="dropdown-item" href="restaurantes.html">Restaurantes</a>
+            </li>
           </ul>
         </div>
-        <br>
+
+
+
   <div>
     <h2>Los mejores escenarios para músicos encontralos en nuestras galerias</h2>
-    <p>¿Eres músico emergente o profesional y estas buscando un lugar donde mostrar tu show?
+    <p>¿Eres músico emergente o profesional y estas buscando un lugar donde mostrar tu show? Entrá a nuestra galería de establecimientos con los más destacados escenarios para shows musicales.</p>
+    <header>
+</div>
 
-Entrá a nuestra galería de establecimientos con los más destacados escenarios para shows musicales.
-</p>
-  <div class="container">
-    <img src="../imagenes/Escenario.jpg" alt="Banda"width="100%">
-  </div>
+    <section>
+        <div class="container2">
+          <div class="card">
+                <img src="../imagenes/logocafeberlin.jpg" alt="Cafe Berlin">
+                <h3>CAFE BERLIN</h3>
+                <p>Pateando el tablero de los circuitos habituales, Café Berlín Buenos Aires se instala en Devoto y celebra la diversidad en la esfera musical actual con una grilla que incluye a los más destacados artistas de cada género: Julieta Venegas, Chango Spasiuk, Teresa Parodi, Lito Vitale, Hilda Lizarazu, Pipi Piazzola, Fabiana Cantilo, Diego Frenkel, entre otros. Acompaña sus shows con tapas de autor, carta de vinos y coctelería clásica.</p>
+                <button>Entrar al perfil</button>
+            </div>
+          <div class="card">
+                <img src="../imagenes/fotocavern.jpg" alt="The Cavern">
+                <h3>THE CAVERN</h3>
+                <p>Ubicado dentro del Paseo La Plaza y sobre la calle Corrientes, The Cavern Buenos Aires es un complejo dedicado a The Beatles. Con el aval del Cavern Club de Liverpool, es la sede oficial del mítico bar en América.
+Música, Teatro & Standup. Nuestras salas ofrecen espectáculos todos los días y diferentes horarios con un amplio programa.. Consulta nuestra programación.
+                </p>
+                <button>Entrar al perfil</button>
+          </div>
+          <div class="card">
+                <img src="../imagenes/logolucille.jpeg" alt="Club Lucille">
+                <h3>CLUB LUCILLE</h3>
+                <p>Lucille es una sala de conciertos en el corazón de Palermo, un lugar que siempre podes ver una buena propuesta, tomar unos tragos ricos y pasarla bien con amigos.
+Un xcelente lugar para disfrutar de un bar muy completo y una sala donde se disfruta de los shows de todo tipo ycon grandes músicos de todas partes.
+                </p>
+                <button>Entrar al perfil</button>
+          </div>
+          <div class="card">
+                <img src="../imagenes/logovuelaelpez.jpg" alt="Vuela el Pez">
+                <h3>VUELA EL PEZ</h3>
+                <p>Vuela el Pez es un centro cultural y espacio de aprendizaje alternativo ubicado en Buenos Aires. Se describe como un lugar donde la cultura popular, independiente y autogestiva se fomenta y promueve. Ofrece una variedad de actividades artísticas, como música, presentaciones de libros, charlas y exposiciones, además de una propuesta gastronómica. Es un espacio que busca generar un ambiente afectuoso, diverso y solidario, donde los niños son protagonistas de su desarrollo.</p>
+                <button>Entrar al perfil</button>
+            </div>
+          <div class="card">
+                <img src="../imagenes/logotdk.jpeg" alt="Espacio TDK">
+                <h3>ESPACIO TDK</h3>
+                <p>Espacio TBK es un espacio cultural en Buenos Aires dedicado a la promoción y difusión de las artes escénicas argentinas contemporáneas, con un enfoque particular en la dramaturgia. Ofrece diversas actividades como el cicloINcierto, un programa para dramaturgos y creadores centrado en el proceso de creación de nuevas obras, y residencias de dramaturgia. Además, Espacio TBK publica obras seleccionadas y participa en la organización de eventos teatrales. </p>
+                <button>Entrar al perfil</button>
+          </div>
+          <div class="card">
+                <img src="../imagenes/logoelportal.jpeg" alt="El Portal del Abasto">
+                <h3>EL PORTAL</h3>
+                <p>El Portal del Abasto es un espacio cultural en Buenos Aires, Argentina. Ofrece talleres para jóvenes y adultos, con o sin experiencia, y se centra en el entrenamiento de cuerpos para la escena y la exploración de la improvisación. Además, el espacio se presenta como un lugar para "despertar la creatividad" y "descubrir y sintonizar con el universo interno, el externo, el 'entre' y el 'más allá'". </p>
+                <button>Entrar al perfil</button>
+          </div>
+          <div class="card">
+                <img src="../imagenes/logosenortango.jpeg" alt="Señor Tango">
+                <h3>SEÑOR TANGO</h3>
+                <p>Señor Tango es un restaurante y bar argentino ubicado en la Ciudad Autónoma de Buenos Aires. Combina la pasión por el tango con una experiencia gastronómica y de entretenimiento única. Ofrece shows en vivo de tango tradicional, una exquisita propuesta culinaria que refleja la rica cultura argentina. Señor Tango busca transportar a sus visitantes a la esencia del tango y la cultura porteña, para disfrutar de la música, la danza y la buena comida en un solo lugar.</p>
+                <button>Entrar al perfil</button>
+            </div>
+          <div class="card">
+                <img src="../imagenes/logobebopclub.jpg" alt="Bebop Club">
+                <h3>BEBOP CLUB</h3>
+                <p>Bebop Club es un espacio de música en vivo en Buenos Aires, Argentina, enfocado principalmente en jazz, pero también ofrece música de raíz negra como blues, funk y soul. Abierto todos los días, presenta shows nacionales e internacionales de diversos géneros. Además de disfrutar de la música, los asistentes pueden cenar o tomar algo de la carta, con opciones de comida y bebidas seleccionadas, según la información del club.</p>
+                <button>Entrar al perfil</button>
+          </div>
+          <div class="card">
+                <img src="../imagenes/logotheloniousclub.jpg" alt="Thelonious Club">
+                <h3>THELONIOUS CLUB </h3>
+                <p>El Thelonious Club es un reconocido bar de jazz en Buenos Aires, famoso por su ambiente íntimo y su programación de música en vivo de alta calidad. Se inspira en los clubes de jazz neoyorquinos y se destaca por su atmósfera relajada, luces tenues y decoración sencilla. Ofrece una experiencia musical multicultural, con artistas que interpretan jazz en diferentes estilos, incluyendo soul, gypsy y bebop. Además, el club ofrece opciones de comida como pizzas y picadas para acompañar la música. </p>
+                <button>Entrar al perfil</button>
+          </div>          <div class="card">
+                <img src="../imagenes/logoelemergente.jpg" alt="El Emergente">
+                <h3>EL EMERGENTE</h3>
+                <p>El Emergente es un proyecto cultural con múltiples facetas, incluyendo dos sedes físicas y una estación de radio. Se dedica principalmente a la gestación y exposición de artistas emergentes, ofreciendo una variedad de propuestas artísticas de lunes a lunes. Además, participa en eventos como el homenaje a Luis Alberto Spinetta organizado por Conduciendo a Conciencia, donde se busca apoyar a escuelas rurales a través de la cultura.</p>
+                <button>Entrar al perfil</button>
+            </div>
+          <div class="card">
+                <img src="../imagenes/logoelteatrito.jpg" alt="El Teatrito">
+                <h3>EL TEATRITO</h3>
+                <p>El Teatrito es reconocido por su variada programación de conciertos y eventos en vivo. Ha sido escenario de presentaciones de bandas nacionales e internacionales, abarcando diversos géneros musicales. La cartelera de eventos se actualiza regularmente, ofreciendo opciones para distintos gustos musicales. Una opción atractiva para quienes buscan disfrutar de música en vivo en un ambiente acogedor en el centro de Buenos Aires.</p>
+                <button>Entrar al perfil</button>
+          </div>
+          <div class="card">
+                <img src="../imagenes/logonicetoclub.jpg" alt="Niceto Club">
+                <h3>NICETO CLUB</h3>
+                <p>Niceto Club, situado en Niceto Vega 5510 en el barrio de Palermo, es un ícono de la vida nocturna porteña desde su apertura en julio de 1998. Este establecimiento se ha consolidado como un punto de encuentro para amantes de diversos géneros musicales, ofreciendo una programación infinita y variada que abarca desde rock y pop hasta reggae, hip hop, electrónica, tango, soul y funk.</p>
+                <button>Entrar al perfil</button>
+          </div>
+
+        </div>
+      </section>
+
 <br>
    </main>
-    <footer>
-        STAGE - stage@satge.com - www.stage.com
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+            <figure>
+                <a href="../index.html">
+                    <img src="../imagenes/stagelogogrgr.png" alt="Logo Stage">
+                </a>
+            </figure>
+            </div>
+            <div class="box">
+                <h6>NUESTRA EMPRESA</h6>
+                <p class="text">Stage es un puente que une artistas con escenarios de todo nuestro país.</p>
+                <p class="text">Músicos emergentes y establecimientos destacados para seguir enalalteciendo nuestro arte y cultura.</p>
+            </div>
+            <div class="box">
+                <h6>TAMBIÉN PODES SEGUIRNOS</h6>
+                <div class="red-social">
+                <a href="#"><img src="../imagenes/icofacebook.png" alt="Facebook" class="ico"></a>
+                <a href="#"><img src="../imagenes/icoinstagram.png" alt="Instagram" class="ico"></a>
+                <a href="#"><img src="../imagenes/icowhatsapp.png" alt="Whatsapp" class="ico"></a>
+                <a href="#"><img src="../imagenes/icoyoutube.png" alt="Youtube" class="ico"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2025 <b>STAGE</b> - Todos los Derechos Reservados.</small>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script></body>
+    <script src="../js/main.js"></script>
+</body>
 </html>

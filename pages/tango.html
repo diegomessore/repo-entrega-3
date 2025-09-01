@@ -5,44 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">    
 <link rel="stylesheet" href="../styles.css">
-<link rel="icon" href="imagenes/favicon.ico">
+<link rel="icon" href="../imagenes/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<title>Solistas y grupos de Tango</title>
+<meta name="keywords" content="tango, solistas de tango, grupos de tango, música argentina, orquestas de tango, bailarines de tango, cultura argentina, espectáculos de tango, milonga, tango contemporáneo, tango tradicional">
+<meta name="description" content="Descubre los mejores solistas y grupos de tango en nuestra plataforma. Explora perfiles de artistas destacados, conoce sus historias y estilos únicos. Encuentra orquestas y bailarines que mantienen viva la tradición del tango argentino, desde lo clásico hasta lo contemporáneo. Perfecto para amantes del tango y la cultura argentina.">
 </head>
 <body>
 
-   <header class="container">
-        <nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="../index.html"><img src="../imagenes/stagelogogr.png" width="250" height="40" alt=""></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="establecimientos.html">Establecimientos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="musicos.html">Musicos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="comunidad.html">Comunidad</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="contacto.html">Contactos</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+   <header class="header">
+    <a href="../index.html"><img src="../imagenes/stagelogogr.png" width="250" height="40" alt=""></a>
+    <input type="checkbox" id="check">
+    <label for="check" class="icons">
+    <i class='bx  bx-menu' id="menu-icon"></i>
+    <i class='bx  bx-x' id="close-icon"></i>
+    </label>
+        <nav class="navbar">
+          <a href="./establecimientos.html" style="--i:0">Establecimientos</a>
+          <a href="./musicos.html" style="--i:1">Músicos</a>
+          <a href="./comunidad.html" style="--i:2">Comunidad</a>
+          <a href="./contacto.html" style="--i:3">Contactos</a>
 </nav>
     </header>
     
    <main>
   <div class="container">
-    <h1>MÚSICOS SOLISTAS Y GRUPOS DE TANGO</h1>
-  <br>
+    <h1>SOLISTAS Y GRUPOS DE TANGO</h1>
+      <div class="container">
+        <div class="dropdown">
+          <button class="btn btn-green-2" data-bs-toggle="dropdown">
+            Buscar por género musical
+          </button>
+
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="rock.html">Rock</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="pop.html">Pop</a>
+            </li>
+                        <li>
+              <a class="dropdown-item" href="folklore.html">Folklore</a>
+            </li>
+                        <li>
+              <a class="dropdown-item" href="tango.html">Tango</a>
+            </li>
+          </ul>
+        </div>
     <section>
         <div class="container2">
           <div class="card">
@@ -66,8 +78,32 @@
         </div>
       </section>
    </main>
-    <footer>
-        STAGE - stage@satge.com - www.stage.com
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+            <figure>
+                <a href="../index.html">
+                    <img src="../imagenes/stagelogogrgr.png" alt="Logo Stage">
+                </a>
+            </figure>
+            </div>
+            <div class="box">
+                <h6>NUESTRA EMPRESA</h6>
+                <p class="text">Stage es un puente que une artistas con escenarios de todo nuestro país.</p>
+                <p class="text">Músicos emergentes y establecimientos destacados para seguir enalalteciendo nuestro arte y cultura.</p>
+            </div>
+            <div class="box">
+                <h6>TAMBIÉN PODES SEGUIRNOS</h6>
+                <div class="red-social">
+                <a href="#"><img src="../imagenes/icofacebook.png" alt="Facebook" class="ico"></a>
+                <a href="#"><img src="../imagenes/icoinstagram.png" alt="Instagram" class="ico"></a>
+                <a href="#"><img src="../imagenes/icowhatsapp.png" alt="Whatsapp" class="ico"></a>
+                <a href="#"><img src="../imagenes/icoyoutube.png" alt="Youtube" class="ico"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2025 <b>STAGE</b> - Todos los Derechos Reservados.</small>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script></body>
 </html>

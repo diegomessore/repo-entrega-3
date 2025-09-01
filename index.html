@@ -8,34 +8,26 @@
 <link rel="icon" href="imagenes/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
 <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Stage escenarios para músicos</title>
+<meta name="keywords" content="música, escenarios, bares, teatros, restaurantes, espacios culturales, músicos emergentes, shows en vivo, comunidad musical, músicos emergentes, rock, tango, folklore, pop, blues, jazz, stage">
+<meta name="description" content="STAGE conecta a músicos emergentes con los mejores escenarios en CABA. Encuentra bares, teatros, restaurantes y espacios culturales para tus shows en vivo. Únete a nuestra comunidad musical y haz que tu música llegue más lejos, encuentra escenarios.">
+
 </head>
 <body>
-   <header class="container">
-        <nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html"><img src="imagenes/stagelogogr.png" width="250" height="40" alt=""></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="pages/establecimientos.html">Establecimientos</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="pages/musicos.html">Músicos</a>
-        </li>       
-        <li class="nav-item">
-          <a class="nav-link" href="pages/comunidad.html">Comunidad</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="pages/contacto.html">Contactos</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+   <header class="header">
+    <a href="index.html"><img src="imagenes/stagelogogr.png" width="250" height="40" alt=""></a>
+    <input type="checkbox" id="check">
+    <label for="check" class="icons">
+    <i class='bx  bx-menu' id="menu-icon"></i>
+    <i class='bx  bx-x' id="close-icon"></i>
+    </label>
+        <nav class="navbar">
+          <a href="pages/establecimientos.html" style="--i:0">Establecimientos</a>
+          <a href="pages/musicos.html" style="--i:1">Músicos</a>
+          <a href="pages/comunidad.html" style="--i:2">Comunidad</a>
+          <a href="pages/contacto.html" style="--i:3">Contactos</a>
 </nav>
     </header>
     <main>
@@ -45,7 +37,7 @@
 Nuestra plataforma digital facilita la búsqueda, reserva y promoción de locales aptos para recitales, brindando mayor visibilidad a artistas y oportunidades a establecimientos aptos para shows musicales y espacios culturales. 
 Simplificamos el proceso de organización de eventos en vivo, fomentando una comunidad vibrante que impulsa la escena musical local y ayuda a que cada recital sea una experiencia memorable.
 .</p>
-<aside class="container">
+<aside class="container2">
 <section>
 <div class="card1">
     <div class="face front">
@@ -122,9 +114,34 @@ Simplificamos el proceso de organización de eventos en vivo, fomentando una com
 
     </section>
    </main>
-    <footer>
-        STAGE - stage@satge.com - www.stage.com
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+            <figure>
+                <a href="index.html">
+                    <img src="imagenes/stagelogogrgr.png" alt="Logo Stage">
+                </a>
+            </figure>
+            </div>
+            <div class="box">
+                <h6>NUESTRA EMPRESA</h6>
+                <p class="text">Stage es un puente que une artistas con escenarios de todo nuestro país.</p>
+                <p class="text">Músicos emergentes y establecimientos destacados para seguir enalalteciendo nuestro arte y cultura.</p>
+            </div>
+            <div class="box">
+                <h6>TAMBIÉN PODES SEGUIRNOS</h6>
+                <div class="red-social">
+                <a href="#"><img src="./imagenes/icofacebook.png" alt="Facebook" class="ico"></a>
+                <a href="#"><img src="./imagenes/icoinstagram.png" alt="Instagram" class="ico"></a>
+                <a href="#"><img src="./imagenes/icowhatsapp.png" alt="Whatsapp" class="ico"></a>
+                <a href="#"><img src="./imagenes/icoyoutube.png" alt="Youtube" class="ico"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2025 <b>STAGE</b> - Todos los Derechos Reservados.</small>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

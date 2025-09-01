@@ -1,21 +1,142 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-.navbar {
-  background-color: rgb(253, 253, 253)
-}
-.navbar
-.navbar-text,
-.navbar-brand,
-.nav-Link {
-    color: rgb(230, 155, 6) !important;
-
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
 }
 
 body {
-    padding-top: 60px;
+  min-height: 100vh;
+  background: rgb(255, 255, 255);
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.3rem 10%;
+/*   background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(50px); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(247, 243, 243, 0.1);
+  backdrop-filter: blur(50px);
+  z-index: -1;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(50deg, trasparent, rgba(206, 204, 202, 0.4), transparent);
+  transition: .5s;
+}
+
+.header:hover::after {
+  left: 100%;
+  transition: 3s;
+}
+
+.logo {
+  max-width: 150px;
+  cursor: pointer;
+}
+
+.navbar a {
+  font-size: 1.1rem;
+  color: rgb(36, 35, 32);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 1.5rem;
+}
+
+#check {
+  display: none;
+} 
+
+.icons {
+  position: absolute;
+  right: 5%;
+  font-size: 2.2rem;
+  color: rgb(54, 53, 52);
+  cursor: pointer;
+  display: none;
 }
 
 
+ @media (max-width: 992px){
+  .header {
+    padding: 1.3rem 5%;
+  }
+}
 
+ @media (max-width: 850px){
+  .icons {
+    display: inline-flex;
+  }
 
+  #check:checked~.icons #menu-icon {
+    display: none;
+  } 
+
+  .icons #close-icon {
+    display: none;
+  }
+
+  #check:checked~.icons #close-icon {
+    display: block;
+  } 
+  
+  .navbar {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(243, 242, 241, 0.1);
+    backdrop-filter: blur(50px);
+    overflow: hidden;
+    transition: .2s ease;
+  }
+
+  #check:checked~.navbar {
+    height: 17.7rem;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 15px;
+    transform: translateY(-10px);
+    opacity: 0;
+    transition: .2s ease;
+  }
+
+  #check:checked~.navbar a {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: calc(.1s * var(--i));
+  }
+ }
